@@ -1,0 +1,41 @@
+.titulos {
+    color: red;
+    font-size: 30px;
+    background: blue;
+}
+
+#id_titulo {
+    color: black;
+    background: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Pseudo Clase (eventos) */
+i:hover {
+    color: burlywood;
+    font-size: 50px;
+}
+
+input:focus {
+    border: 5px solid;
+    border-color: rgb(209, 209, 33);
+    background: rgb(236, 72, 72);
+}
+
+[id] {
+    color: cadetblue;
+    font-size: 40px;
+}
+
+[id]:hover {
+    color: aqua;
+}
+
+/* img[alt="No2"] {
+    width: 20px;
+    height: 30px;
+} */
+img[alt*="uce"] {
+    width: 50px;
+    height: 200;
+}

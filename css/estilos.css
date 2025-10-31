@@ -23,3 +23,7 @@
           background: #1840f5;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+
+      body {
+        background-color: black;
+      }
