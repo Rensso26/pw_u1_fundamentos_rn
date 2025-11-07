@@ -134,18 +134,120 @@ function fundamentosJS() {
     profesor.apellido = "Vasquez";
     console.log(profesor);
 
-    if(profesor.ciudad === "Quito"){
+    if (profesor.ciudad === "Quito") {
         console.log('Es quiteño')
     }
-    if(profesor.edad !== 24){
+    if (profesor.edad !== 24) {
         console.log("es diferemte de 24");
 
-    }else{
+    } else {
         console.log('Es 25')
     }
-    for(let clave in profesor){
+    for (let clave in profesor) {
         console.log(clave);
         console.log(profesor[clave])
 
     }
+
+    const e1 = {
+        nombre: "Rensso",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }
+    const e2 = {
+        nombre: "Rensso",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }
+    const arregloEstudiantes = [e1, e2, {
+        nombre: "Rensso3",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }];
+    console.log(arregloEstudiantes[0]);
+    console.log(arregloEstudiantes[2]);
+
+    /* Desestructuracion */
+    //Arreglos
+
+    const ar1 = [1, 2, 3, 4, 5, 6, 7];
+    const [p1, p2, p3, p4, p5] = ar1;
+    console.log(p1);
+    console.log(p4);
+
+    const [primero, , , , , , ultimo] = ar1;
+    console.log(primero);
+    console.log(ultimo);
+
+    const [pos1, pos2] = [1, 2, 3, 4, 5, 6, 7];
+    imprime(ar1);
+
+    const e3 = {
+        nombre: "Rensso",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }
+    const { nombre: n2, ciudad: ci } = e3;
+    console.log(n2);
+    console.log(ci);
+
+    const { nombre: n, ciudad: ciu } = {
+        nombre: "Rensso",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    };
+    console.log(n);
+    console.log(ciu);
+
+    const e4 = {
+        nombre: "Rensso",
+        apellido: "Parra",
+        edad: "24",
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito",
+        direccion: {
+            calle: "Av. America",
+            barrio: "La gasca",
+            numeracion: "2343"
+        }
+    };
+
+    console.log(e4.direccion);
+    console.log(e4.direccion.barrio);
+
+    const { edad: ed, direccion } = e4;
+    console.log(ed);
+
+    console.log(direccion);
+    const { calle } = direccion;
+    console.log(calle);
+
+    const { direccion: { barrio, calle: c1, numeracion } } = e4;
+    console.log(barrio);
+    console.log(calle);
+    console.log(c1);
+    console.log(numeracion);
+
+}
+
+function imprime([a, b, c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
