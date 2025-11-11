@@ -18,7 +18,7 @@
                 <!-- <label id="display" for="">0+1=1</label> -->
                  <div id="display">1+2=3</div>
                 <button onclick="limpiarDisplay()">C</button>
-                <button>&larr;</button>
+                <button onclick="borrarUltimo()">&larr;</button>
                 <button onclick="mostrarDisplay('%')">%</button>
                 <button onclick="mostrarDisplay('/')">/</button>
                 <button onclick="mostrarDisplay('7')">7</button>
@@ -35,7 +35,7 @@
                 <button onclick="mostrarDisplay('+')">+</button>
                 <button onclick="mostrarDisplay('0')">0</button>
                 <button onclick="mostrarDisplay('.')">.</button>
-                <button class="column-2">=</button>
+                <button class="column-2" onclick="calcular()">=</button>
             </div>
         </section>
         <footer>Pie de pagina</footer>
