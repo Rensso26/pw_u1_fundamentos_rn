@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #79dafa;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    font-size: 20px;
+    color: #128de0;
+    margin-top: 35px;
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #807be4;
+    background: none;
+    color: #92daf2;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #3c34de;
+}
+
+.formulario {
+    background: #a7dff2;
+    border-radius: 10px;
+    padding: 32px 23px;
+    box-shadow: 10px 10px #2f2f399c;
+}
+
+button {
+    background: #4ae8eeaa;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    color: #087ac5;
+    border-bottom: 2px solid #066aad;
+    font-size: 30px;
+}
+
+header {
+    color: #087ac5;
+    border-bottom: 2px solid #066aad;
+    font-size: 30px;
+}
