@@ -5,32 +5,32 @@ function guardar() {
 function validarCampos() {
     let nombre = document.getElementById('id_nombre').value;
     let apellido = document.getElementById('id_apellido').value;
+    let fecha = document.getElementById('id_fecha').value;
+    let password = document.getElementById('id_password').value;
     let email = document.getElementById('id_email').value;
-
+    
 
     if (nombre === "") {
         mostrarMensaje('Nombre es obligatorio');
         mostrarAsterisco('id_error_nombre');
-
-        if (apellido === "") {
-            mostrarMensaje('Nombre y Apellido es obligatorio');
-            mostrarAsterisco('id_error_apellido');
-
-            if (email === "") {
-                mostrarMensaje('Nombre y Apellido Email es obligatorio');
-                mostrarAsterisco('id_error_apellido');
-                return;
-            }
-        }
         return;
 
     }
 
-
     if (apellido === "") {
         mostrarMensaje('Apellido es obligatorio');
         mostrarAsterisco('id_error_apellido');
-
+        return
+    }
+    if (password === "") {
+        mostrarMensaje('Password es obligatorio');
+        mostrarAsterisco('id_error_password');
+        return
+    }
+    if (fecha === "") {
+        mostrarMensaje('Fecha es obligatorio');
+        mostrarAsterisco('id_error_fecha');
+        return
     }
 
     if (email === "") {
