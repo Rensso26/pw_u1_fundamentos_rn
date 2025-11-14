@@ -22,7 +22,7 @@ input {
     border: none;
     border-bottom: 2px solid #807be4;
     background: none;
-    color: #92daf2;
+    color: #0b465a;
 }
 
 input:focus {
@@ -61,4 +61,20 @@ header {
     color: #087ac5;
     border-bottom: 2px solid #066aad;
     font-size: 30px;
+}
+
+.msg_error{
+    background: #ffdddd;
+    border-radius: 5px solid red;
+    padding: 10px;
+    color: #b30000;
+    display: none;
+    font-weight: bold;
+}
+
+.error_as {
+    color: red;
+    font-weight: bold;
+    font-size: 18;
+
 }
