@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/practica.css">
+    <script src="../js/practica.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <nav></nav>
+        <section>
+            <div class="section">
+                <div class="image">
+                    <img src="../img/card.png" alt="Card">
+                </div>
+                <div class="formulario">
+                    <div class="datos">
+                        <h1>Paymend Details</h1>'
+                        <div class="msg-error" id="msg-error"></div>
+
+                        <label for="cd_name">Cardholder Name<span id="id_error_nombre" class="error_as"></span></label>
+                        <input type="text" id="cd_name" placeholder="Mis Kate Smith">
+                        <label for="cd_number">Card Number</label>
+                        <input type="text" id="cd_number" placeholder="0000 0000 0000 0000">
+                    </div>
+
+                    <div class="Validation">
+                        <label for="cd_exp">Exp Date</label>
+                        <input type="text" id="cd_exp" placeholder="MM/YY" maxlength="5"
+                            pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+                        <label for="cd_cvv">CVV</label>
+                        <input type="text" id="cd_cvv" placeholder="0000">
+                    </div>
+                    <button>Confirm</button>
+                </div>
+            </div>
+    </div>
+    </section>
+    <footer></footer>
+
+    </div>
+</body>
+
+</html>
